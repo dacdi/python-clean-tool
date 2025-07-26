@@ -1,7 +1,10 @@
 import argparse
 import os
-from dotenv import load_dotenv
+import sys
 
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+
+from dotenv import load_dotenv
 from src.data_loader import load_csv
 from src.logger_config import setup_logging
 from src.analyze import analyze_dataframe
