@@ -36,3 +36,5 @@ def analyze_dataframe(df: pd.DataFrame) -> None:
     except Exception as e:
         logger.error("Error during analysis: %s", e)
         raise
+
+    logger.info("Describe:\n%s", df.describe())

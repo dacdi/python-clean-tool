@@ -1,6 +1,6 @@
 # 🧼 Python Clean Tool
 
-Ein kleines Python-Tool zur Analyse von CSV- oder JSON-Dateien.  
+Ein kleines Python-Tool zur Analyse von CSV- oder JSON-Dateien.
 Es zeigt den Einsatz von Clean Code, Logging, Tests und Git-Dokumentation.
 
 ## 🧰 Features
@@ -13,7 +13,7 @@ Es zeigt den Einsatz von Clean Code, Logging, Tests und Git-Dokumentation.
 
 ## 🛠️ Setup
 
-1. Projekt klonen (wenn online) oder lokal öffnen  
+1. Projekt klonen (wenn online) oder lokal öffnen
 2. Virtuelle Umgebung erstellen:
 
 ```bash
