@@ -4,6 +4,7 @@ import logging
 # Modul-spezifischer Logger (folgt zentraler Konfiguration)
 logger = logging.getLogger(__name__)
 
+
 def load_csv(filepath: str, sep: str = ",") -> pd.DataFrame:
     """
     Load a CSV file and return its contents as a pandas DataFrame.
@@ -21,7 +22,9 @@ def load_csv(filepath: str, sep: str = ",") -> pd.DataFrame:
     """
     try:
         df = pd.read_csv(filepath, sep=sep)
-        logger.info(f"✅ Datei geladen: '{filepath}' ({df.shape[0]} Zeilen, {df.shape[1]} Spalten)")
+        logger.info(
+            f"✅ Datei geladen: '{filepath}' ({df.shape[0]} Zeilen, {df.shape[1]} Spalten)"
+        )
         return df
     except FileNotFoundError:
         logger.error(f"❌ Datei nicht gefunden: '{filepath}'")

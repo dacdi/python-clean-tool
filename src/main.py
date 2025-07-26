@@ -17,19 +17,15 @@ def main():
     parser.add_argument(
         "--filepath",
         default=os.getenv("CSV_PATH"),
-        help="Pfad zur CSV-Datei (z. B. aus .env)"
+        help="Pfad zur CSV-Datei (z. B. aus .env)",
     )
 
-    parser.add_argument(
-        "--sep",
-        default=",",
-        help="Spaltentrenner (Standard: Komma)"
-    )
+    parser.add_argument("--sep", default=",", help="Spaltentrenner (Standard: Komma)")
 
     parser.add_argument(
         "--loglevel",
         default=os.getenv("LOG_LEVEL", "INFO"),
-        help="Logging-Level (DEBUG, INFO, WARNING, ERROR)"
+        help="Logging-Level (DEBUG, INFO, WARNING, ERROR)",
     )
 
     args = parser.parse_args()

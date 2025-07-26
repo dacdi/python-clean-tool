@@ -1,5 +1,4 @@
 import pandas as pd
-import pytest
 from src.data_loader import load_csv
 
 
@@ -15,4 +14,3 @@ def test_load_valid_csv(tmp_path):
     assert isinstance(df, pd.DataFrame)
     assert df.shape == (2, 2)
     assert list(df.columns) == ["col1", "col2"]
-
